@@ -1,2 +1,14 @@
 # So-Vits-SVC-Helper
-A program with GUI that can help you strat train your model when you want to use So-Vits-SVC.
+一个可以帮助您快速开始训练及推理So-Vits-SVC模型的带有图形界面的Python应用程序。
+目前仅支持So-Vits-SVC 4.1。目前仅有简体中文支持。
+# 如何使用？
+在开始之前，请确保您已经按照 **svc-develop-team** 编写的教程准备好训练集、验证集、配置文件并**至少**成功启动过一次主模型训练或扩散模型训练。
+#### 下载文件
+下载本页面中除 **"LICENSE"** 、 **"README.md"** 文件以及 **images** 文件夹外的所有文件后复制到So-Vits-SVC的根目录下。  
+#### 定义程序路径
+接着，使用您的文本编辑器打开**gui-helper.py**并定位至第35行，修改引号中的内容为您本地的So-Vits-SVC根目录，**最后一位不应为"\\"**。  
+#### 启动程序
+使用Python启动**gui-helper.py**即可。
+# 功能介绍
+目前版本支持进行 **主模型训练，扩散模型训练，启动WebUI，打开输入/输出文件夹** ，支持选择是否**使用TensorBoard**。  
+程序底部会显示当前目录的So-Vits-SVC下的 **最新主模型，扩散模型以及说话人** ，每60秒自动更新。
